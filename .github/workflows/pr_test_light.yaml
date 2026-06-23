@@ -53,7 +53,7 @@ jobs:
       test_groups: ${{ steps.scope.outputs.test_groups }}
       matched_modules: ${{ steps.scope.outputs.matched_modules }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       # For now, we still need to use paths-filter to determine whether the change is related to e2e test.
