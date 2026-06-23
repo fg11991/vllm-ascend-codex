@@ -84,7 +84,7 @@ jobs:
           pip install uv
 
       - name: Checkout vllm-project/vllm repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: vllm-project/vllm
           ref: ${{ inputs.vllm }}
@@ -97,7 +97,7 @@ jobs:
           pip uninstall -y triton
 
       - name: Checkout vllm-project/vllm-ascend repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Get csrc hash
         id: get_csrc_hash
